@@ -11,11 +11,20 @@ Built from official [Wordpress Docker image](https://hub.docker.com/_/wordpress)
 Run `docker ps` to see what port Wordpress is up on.
 You may have to use incognito mode when viewing the site in the browser. 
 
-Login to the admin interface and update Wordpress to the latest version.
+Login to the admin interface on `<url>/wp-admin` and update Wordpress to the latest version.
 
 username: user
+
 password: RO#6rM72?
 
+The favicon may have to be changed in Appearance >> Customize >> Site Identity
+
+Click "Change image".
+
+Then add `cropped-favicon_7cb0aa1d18.png`
+from the directory `uploads/2021/04/` in this repository. 
+
+Click "Publish".
 
 ## Deploying on a domain
 
@@ -27,5 +36,6 @@ When deploying on a domain options "siteurl" and "home" have to be changed.
 
 `USE exampledb; UPDATE wp_options SET option_value='http://www.yourdomain.com' WHERE option_name='home'OR option_name='siteurl';`
 
-Then login to the admin interface and update Wordpress to the latest version.
+Then login to the admin interface on `<url>/wp-admin` and update Wordpress to the latest version.
 
+Also change the favicon as described in the paragraph above.
