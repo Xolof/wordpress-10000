@@ -13,6 +13,9 @@ You may have to use incognito mode when viewing the site in the browser.
 
 Login to the admin interface and update Wordpress to the latest version.
 
+username: user
+password: RO#6rM72?
+
 
 ## Deploying on a domain
 
