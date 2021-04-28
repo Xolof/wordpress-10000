@@ -22,11 +22,7 @@ When deploying on a domain options "siteurl" and "home" have to be changed.
 
 `mysql -uroot -ppass`
 
-`USE exampledb;
-
-UPDATE wp_options
-SET option_value='http://www.yourdomain.com'
-WHERE option_name='home'OR option_name='siteurl';`
+`USE exampledb; UPDATE wp_options SET option_value='http://www.yourdomain.com' WHERE option_name='home'OR option_name='siteurl';`
 
 Then login to the admin interface and update Wordpress to the latest version.
 
